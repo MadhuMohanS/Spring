@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="employee" class="com.xworkz.employee.Employee">
+		<property name="name" value="Vishnu"></property>
+		<property name="phones">
+			<list>
+				<value>98803246</value>
+				<value>98807464</value>
+				<value>87648564</value>
+				<value>88664653</value>
+			</list>
+		</property>
+
+		<property name="addresses">
+			<set>
+				<value>Davangere</value>
+				<value>Hyderabad</value>
+				<value>Lucknow</value>
+			</set>
+		</property>
+
+		<property name="courses">
+			<map>
+				<entry key="java" value="2months" />
+				<entry key="web" value="1months" />
+				<entry key="jsp" value="2weeks" />
+			</map>
+		</property>
+	</bean>
+</beans>
